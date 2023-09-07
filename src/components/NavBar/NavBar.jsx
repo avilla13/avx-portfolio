@@ -7,13 +7,13 @@ export default function Navbar() {
             <div className='navitems'>
                 <ul>
                     <li>
-                        <a href="#home" className='nav-home'>Home</a>
+                        <Link to="/home" className='nav-home'>Home</Link>
                     </li>
                     <li>
-                        <a href="#about" className='nav-about'>About</a>
+                        <Link to="/about" className='nav-about'>About</Link>
                     </li>
                     <li>
-                        <a href="#projects" className='nav-projects'>Projects</a>
+                        <Link to="/projects" className='nav-projects'>Projects</Link>
                     </li>
                     <li>
                         <a href="#contact" className='nav-contact'>Contact</a>
