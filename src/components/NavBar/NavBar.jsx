@@ -1,10 +1,18 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Link } from "react-router-dom";
+import './NavBar.css';
 
 export default function Navbar() {
+    const [openNav, setOpenNav] = useState(false);
+
+    const toggleSidebar = () => {
+        setOpenNav(!openNav);
+    };
+
     return (
         <nav>
-            <div className='navitems'>
+            <button onClick={toggleSidebar} className='navtoggle'>Toggle</button>
+            <div className={`navitems ${openNav ? 'open' : ''}`} >
                 <ul>
                     <li>
                         <Link to="/home" className='nav-home'>Home</Link>
@@ -16,7 +24,7 @@ export default function Navbar() {
                         <Link to="/projects" className='nav-projects'>Projects</Link>
                     </li>
                     <li>
-                        <a href="#contact" className='nav-contact'>Contact</a>
+                        <a href="/contact" className='nav-contact'>Contact</a>
                     </li>
                 </ul>
             </div>

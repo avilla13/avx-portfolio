@@ -1,0 +1,40 @@
+.navtoggle {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+.navitems {
+    width: 0;
+    height: 100vh;
+    overflow-x: hidden;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    transition: 0.5s; 
+    padding-top: 60px;
+}
+
+.navitems.open {
+    width: 250px;
+}
+
+.navitems ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.navitems ul li a {
+    padding: 10px 15px;
+    text-decoration: none;
+    font-size: 25px;
+    color: white;
+    display: block;
+    transition: 0.3s;
+}
+
+.navitems ul li a:hover {
+    color: #f1f1f1;
+}
