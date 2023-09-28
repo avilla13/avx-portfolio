@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import './NavBar.css';
 
 export default function Navbar() {
-    const [openNav, setOpenNav] = useState(false);
+    const [openNav, setOpenNav] = useState(true);
 
     const toggleSidebar = () => {
         setOpenNav(!openNav);
