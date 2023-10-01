@@ -1,6 +1,9 @@
 import React, { useState } from 'react';
 import { Link } from "react-router-dom";
 import './NavBar.css';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+// import { icon } from '@fortawesome/fontawesome-svg-core/import.macro';
+import { faBars, faAddressCard, faBriefcase, faUserTie, faHouse } from '@fortawesome/free-solid-svg-icons';
 
 export default function Navbar() {
     const [openNav, setOpenNav] = useState(true);
@@ -11,20 +14,30 @@ export default function Navbar() {
 
     return (
         <nav>
-            <button onClick={toggleSidebar} className='navtoggle'>Toggle</button>
+            <button onClick={toggleSidebar} className='navtoggle'>
+                <FontAwesomeIcon icon={ faBars } size='lg' style={{color: "#003ca3",}} />
+            </button>
             <div className={`navitems ${openNav ? 'open' : ''}`} >
                 <ul>
                     <li>
-                        <Link to="/home" className='nav-home'>Home</Link>
+                        <Link to="/home" className='nav-home'>
+                            <FontAwesomeIcon icon={faHouse} size="sm" style={{color: "#fafafa",}} /> Home
+                        </Link>
                     </li>
                     <li>
-                        <Link to="/about" className='nav-about'>About</Link>
+                        <Link to="/about" className='nav-about'>
+                            <FontAwesomeIcon icon={faAddressCard} size="sm" style={{color: "white",}} /> About
+                        </Link>
                     </li>
                     <li>
-                        <Link to="/projects" className='nav-projects'>Projects</Link>
+                        <Link to="/projects" className='nav-projects'>
+                            <FontAwesomeIcon icon={faBriefcase} size="sm" style={{color: "white",}} /> Projects
+                        </Link>
                     </li>
                     <li>
-                        <a href="/contact" className='nav-contact'>Contact</a>
+                        <a href="/contact" className='nav-contact'>
+                            <FontAwesomeIcon icon={faUserTie} size='sm' style={{color: "#fafafa",}} /> Contact
+                        </a>
                     </li>
                 </ul>
             </div>
