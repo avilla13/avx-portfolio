@@ -21,7 +21,7 @@ export default function Navbar() {
                 <ul>
                     <li>
                         <Link to="/home" className='nav-home'>
-                            <FontAwesomeIcon icon={faHouse} size="sm" style={{color: "#fafafa",}} /> Home
+                            <FontAwesomeIcon icon={faHouse} size="sm" style={{color: "white",}} /> Home
                         </Link>
                     </li>
                     <li>
@@ -36,7 +36,7 @@ export default function Navbar() {
                     </li>
                     <li>
                         <a href="/contact" className='nav-contact'>
-                            <FontAwesomeIcon icon={faUserTie} size='sm' style={{color: "#fafafa",}} /> Contact
+                            <FontAwesomeIcon icon={faUserTie} size='sm' style={{color: "white",}} /> Contact
                         </a>
                     </li>
                 </ul>
@@ -44,4 +44,3 @@ export default function Navbar() {
         </nav>
     )
 }
-

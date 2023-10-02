@@ -5,6 +5,11 @@
     z-index: 1000;
 }
 
+.navtoggle:focus {
+    outline: none;
+    box-shadow: none;
+}
+
 .navitems {
     width: 0;
     height: 100vh;
@@ -13,7 +18,7 @@
     top: 0;
     left: 0;
     background-color: #111;
-    transition: 0.5s; 
+    transition: 0.01s; 
     padding-top: 60px;
 }
 
