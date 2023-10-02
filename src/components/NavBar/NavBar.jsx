@@ -20,7 +20,7 @@ export default function Navbar() {
             <div className={`navitems ${openNav ? 'open' : ''}`} >
                 <ul>
                     <li>
-                        <Link to="/home" className='nav-home'>
+                        <Link to="/" className='nav-home'>
                             <FontAwesomeIcon icon={faHouse} size="sm" style={{color: "white",}} /> Home
                         </Link>
                     </li>
