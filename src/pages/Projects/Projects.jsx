@@ -3,6 +3,7 @@ import HomeWodImage from '../../assets/HomeWod.png';
 import PlanItImage from '../../assets/PlanIt-add.png';
 import ProjectHubImage from '../../assets/ProjectHub.png';
 import MemoryDashImage from '../../assets/MemoryDash.png';
+import './Projects.css';
 
 export default function Projects() {
   const projectData = [
