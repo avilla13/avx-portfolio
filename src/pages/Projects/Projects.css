@@ -24,13 +24,14 @@
 
 .project-card img {
     width: 100%;
-    height: 200px;
+    height: 250px;
     object-fit: cover;
 }
 
 .project-card h3 {
     margin: 1rem 0;
     font-size: 1.5rem;
+    color: #037c9a;
 }
 
 .project-card p {
@@ -49,5 +50,5 @@
 }
 
 .project-card a:hover {
-    background-color: #45a049;
+    background-color: #04f210;
 }
