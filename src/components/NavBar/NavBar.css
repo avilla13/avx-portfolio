@@ -23,7 +23,8 @@
 }
 
 .navitems.open {
-    width: 250px;
+    width: 200px;
+    background-color: rgb(3, 90, 128);
 }
 
 .navitems ul {
