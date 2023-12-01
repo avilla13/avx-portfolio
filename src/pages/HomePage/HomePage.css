@@ -5,6 +5,9 @@
 .main p {
     margin: 20px 0;
 }
+.main h1 {
+    color: #333;
+}
 .main h2 {
     color: #333;
 }
