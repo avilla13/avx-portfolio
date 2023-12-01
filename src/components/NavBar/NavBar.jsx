@@ -15,7 +15,7 @@ export default function Navbar() {
     return (
         <nav>
             <button onClick={toggleSidebar} className='navtoggle'>
-                <FontAwesomeIcon icon={ faBars } size='lg' style={{color: "#003ca3",}} />
+                <FontAwesomeIcon icon={ faBars } size='lg' style={{color: "white",}} />
             </button>
             <div className={`navitems ${openNav ? 'open' : ''}`} >
                 <ul>
