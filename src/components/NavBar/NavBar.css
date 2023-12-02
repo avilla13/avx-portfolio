@@ -11,7 +11,7 @@
 }
 
 .navitems {
-    width: 0;
+    width: 50px;
     height: 100vh;
     overflow-x: hidden;
     position: fixed;
@@ -24,6 +24,10 @@
 
 .navitems.open {
     width: 200px;
+    background-color: rgb(3, 90, 128);
+}
+.navitems.closed {
+    width: 60px;
     background-color: rgb(3, 90, 128);
 }
 

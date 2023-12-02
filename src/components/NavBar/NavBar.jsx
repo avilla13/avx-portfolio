@@ -17,7 +17,7 @@ export default function Navbar() {
             <button onClick={toggleSidebar} className='navtoggle'>
                 <FontAwesomeIcon icon={ faBars } size='lg' style={{color: "white",}} />
             </button>
-            <div className={`navitems ${openNav ? 'open' : ''}`} >
+            <div className={`navitems ${openNav ? 'open' : 'closed'}`} >
                 <ul>
                     <li>
                         <Link to="/" className='nav-home'>
