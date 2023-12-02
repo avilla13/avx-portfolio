@@ -21,22 +21,26 @@ export default function Navbar() {
                 <ul>
                     <li>
                         <Link to="/" className='nav-home'>
-                            <FontAwesomeIcon icon={faHouse} size="sm" style={{color: "white",}} /> Home
+                            <FontAwesomeIcon icon={faHouse} size="sm" style={{color: "white",}} />
+                            {openNav && <span> Home</span>}
                         </Link>
                     </li>
                     <li>
                         <Link to="/about" className='nav-about'>
-                            <FontAwesomeIcon icon={faAddressCard} size="sm" style={{color: "white",}} /> About
+                            <FontAwesomeIcon icon={faAddressCard} size="sm" style={{color: "white",}} />
+                            {openNav && <span> About</span>}
                         </Link>
                     </li>
                     <li>
                         <Link to="/projects" className='nav-projects'>
-                            <FontAwesomeIcon icon={faBriefcase} size="sm" style={{color: "white",}} /> Projects
+                            <FontAwesomeIcon icon={faBriefcase} size="sm" style={{color: "white",}} />
+                            {openNav && <span> Projects</span>}
                         </Link>
                     </li>
                     <li>
                         <a href="/contact" className='nav-contact'>
-                            <FontAwesomeIcon icon={faUserTie} size='sm' style={{color: "white",}} /> Contact
+                            <FontAwesomeIcon icon={faUserTie} size='sm' style={{color: "white",}} />
+                            {openNav && <span> Contact</span>}
                         </a>
                     </li>
                 </ul>
