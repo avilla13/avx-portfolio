@@ -48,3 +48,11 @@
 .navitems ul li a:hover {
     color: yellow;
 }
+.nav-icon {
+    color: white;
+    transition: color 0.3s ease;
+}
+
+.nav-icon:hover {
+    color: yellow;
+}
