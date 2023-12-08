@@ -6,7 +6,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faBars, faAddressCard, faBriefcase, faUserTie, faHouse } from '@fortawesome/free-solid-svg-icons';
 
 export default function Navbar() {
-    const [openNav, setOpenNav] = useState(true);
+    const [openNav, setOpenNav] = useState(null);
 
     const toggleSidebar = () => {
         setOpenNav(!openNav);
