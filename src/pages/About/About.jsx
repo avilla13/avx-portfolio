@@ -1,10 +1,12 @@
 import React from 'react'
 import './About.css';
+import ProfilePic from '../../assets/prof-pic1.jpg';
 
 export default function About() {
   return (
     <div>
       <main>
+        <img src={ProfilePic} alt="Profile" className='profile-pic' />
         <hr />
         <h2>About Me: </h2>      
         <p>

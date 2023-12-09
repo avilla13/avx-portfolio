@@ -22,3 +22,10 @@ h2 {
     margin: 0px;
     padding: 0px;
 }
+
+.profile-pic {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin: 10px 0;
+}
